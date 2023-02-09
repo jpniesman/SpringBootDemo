@@ -2,6 +2,7 @@ package com.jpniesman.springdemo.Controllers;
 
 import com.jpniesman.springdemo.Models.User;
 import com.jpniesman.springdemo.Repo.UserRepo;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -46,4 +47,5 @@ public class ApiController {
         userRepo.delete(deleteUser);
         return "Deleted user with id: " +id;
     }
+
 }
